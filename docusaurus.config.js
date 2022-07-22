@@ -38,7 +38,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          /*{ to: '/blog', label: 'Blog', position: 'left' },*/
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -58,7 +58,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/',
+                to: '/docs/intro',
               },
             ],
           },
@@ -82,10 +82,10 @@ const config = {
           {
             title: 'More',
             items: [
-              /*{
+              {
                 label: 'Blog',
                 to: '/blog',
-              },*/
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/tresdoce/tresdoce-docs',
@@ -111,16 +111,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          //routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        /*blog: {
+        blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
-        },*/
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -136,7 +136,6 @@ const config = {
         hashed: true,
         language: ['en'],
         highlightSearchTermsOnTargetPage: true,
-        docsRouteBasePath: '/',
       },
     ],
   ],
