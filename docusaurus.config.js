@@ -16,8 +16,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -39,6 +39,10 @@ const config = {
             label: 'Tutorial',
           },
           /*{ to: '/blog', label: 'Blog', position: 'left' },*/
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/tresdoce/tresdoce-docs',
             label: 'GitHub',
@@ -127,9 +131,12 @@ const config = {
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
+        indexDocs: true,
+        indexPages: true,
         hashed: true,
-        language: ['es'],
+        language: ['en'],
         highlightSearchTermsOnTargetPage: true,
+        docsRouteBasePath: '/',
       },
     ],
   ],
