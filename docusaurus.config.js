@@ -127,6 +127,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['es'],
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
 };
 
 module.exports = config;
