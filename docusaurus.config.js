@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Portal de documentación',
-  tagline: 'Acá vas a encontrar recursos para empezar a desarrollar tus aplicaciones',
+  title: 'NestJSPedia',
+  tagline: 'Acá vas a encontrar recursos para empezar a desarrollar tus aplicaciones con NestJS.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'tresdoce', // Usually your GitHub org/user name.
   projectName: 'tresdoce-docs', // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
@@ -22,8 +22,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      //image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
+      //metaImage: '/img/supabase-og-image.png',
       navbar: {
         title: 'NestJSPedia',
+        hideOnScroll: false,
         logo: {
           alt: 'NestJSPedia Logo',
           src: 'img/logo.svg',
@@ -51,7 +54,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/',
               },
             ],
           },
@@ -104,6 +107,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
