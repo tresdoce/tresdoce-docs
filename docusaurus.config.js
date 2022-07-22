@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NestJSPedia',
   tagline: 'Acá vas a encontrar recursos para empezar a desarrollar tus aplicaciones con NestJS.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://tresdoce-docs.vercel.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'tresdoce', // Usually your GitHub org/user name.
@@ -38,7 +38,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          /*{ to: '/blog', label: 'Blog', position: 'left' },*/
           {
             href: 'https://github.com/tresdoce/tresdoce-docs',
             label: 'GitHub',
@@ -78,10 +78,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+              /*{
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/tresdoce/tresdoce-docs',
@@ -111,12 +111,12 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
+        /*blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        },*/
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
