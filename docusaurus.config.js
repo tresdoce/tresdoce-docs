@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'NestJSPedia',
+  title: 'CodePedia',
   tagline: 'Acá vas a encontrar recursos para empezar a desarrollar tus aplicaciones con NestJS.',
   url: 'https://tresdoce-docs.vercel.app',
   baseUrl: '/',
@@ -16,8 +16,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -25,24 +25,29 @@ const config = {
       //image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
       //metaImage: '/img/supabase-og-image.png',
       navbar: {
-        title: 'NestJSPedia',
+        title: 'CodePedia',
         hideOnScroll: false,
         logo: {
           alt: 'NestJSPedia Logo',
-          src: 'img/logo.svg',
+          src: '/img/code-file-icon.svg',
+          //src: 'https://camo.githubusercontent.com/c704e8013883cc3a04c7657e656fe30be5b188145d759a6aaff441658c5ffae0/68747470733a2f2f6e6573746a732e636f6d2f696d672f6c6f676f5f746578742e737667',
         },
         items: [
-          {
+          /*{
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
-          },
+          },*/
           /*{ to: '/blog', label: 'Blog', position: 'left' },*/
-          {
+          /*{
             type: 'localeDropdown',
             position: 'right',
-          },
+          },*/
+          /*{
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },*/
           {
             href: 'https://github.com/tresdoce/tresdoce-docs',
             label: 'GitHub',
@@ -134,7 +139,7 @@ const config = {
         indexDocs: true,
         indexPages: true,
         hashed: true,
-        language: ['en'],
+        language: ['es'],
         highlightSearchTermsOnTargetPage: true,
         docsRouteBasePath: '/',
       },

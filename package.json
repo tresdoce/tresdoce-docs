@@ -52,6 +52,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
+    "styled-components": "^5.3.5",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
@@ -106,8 +107,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=16.14"
   }
 }
