@@ -29,6 +29,3 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.theme-doc-markdown.markdown header{
-  display: none;
-}
