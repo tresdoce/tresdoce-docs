@@ -3,56 +3,52 @@ sidebar_position: 1
 title: Starter
 hide_title: true
 slug: /
+shields:
+    - name: NodeJS
+      src: https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.15.4&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js
+    - name: Npm
+      src: https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.10&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm
+    - name: NestJS
+      src: https://img.shields.io/static/v1.svg?style=flat&label=NestJs&message=v8.2.6&labelColor=E0234E&logoColor=FFFFFF&color=757575&logo=Nestjs
+    - name: Latest Release
+      src: https://img.shields.io/github/v/tag/rudemex/nestjs-starter?label=release
+      link: https://github.com/rudemex/nestjs-starter/releases/latest
+      target: _blank
+    - name: License
+      src: https://img.shields.io/github/license/rudemex/nestjs-starter?style=flat
+      link: https://github.com/rudemex/nestjs-starter/blob/master/license.md
+      target: _blank
+      break: true
+    - name: GitHub Workflow Status
+      src: https://github.com/rudemex/nestjs-starter/actions/workflows/master.yml/badge.svg?branch=master
+      link: https://github.com/rudemex/nestjs-starter/actions/workflows/master.yml
+      target: _blank
+    - name: Coverage
+      src: https://img.shields.io/codecov/c/github/rudemex/nestjs-starter?logoColor=FFFFFF&logo=Codecov&labelColor=#F01F7A
+      link: https://app.codecov.io/gh/rudemex/nestjs-starter/
+      target: _blank
+    - name: SonarCloud
+      src: https://sonarcloud.io/api/project_badges/measure?project=rudemex_nestjs-starter&metric=alert_status
+      link: https://sonarcloud.io/summary/new_code?id=rudemex_nestjs-starter
+      target: _blank
+    - name: Snyk
+      src: https://snyk.io/test/github/rudemex/nestjs-starter/badge.svg
+      link: https://snyk.io/test/github/rudemex/nestjs-starter
+      target: _blank
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Header from "../src/components/Header";
-//import Shield from "../src/components/Shield";
+import ContainerShields from "../src/components/Containers";
 
 <Header>
     <img alt="nestjs-starter" width="250" height="auto" src="/img/nestjs-logo.svg"/>
     <h1>NestJS Starter</h1>
 </Header>
 
-<!--<Shield shieldArgs={{
-    style: 'flat',
-    label: 'Node',
-    message: 'v14.15.4',
-    labelColor: '339933',
-    color: '757575',
-    logoColor: 'FFFFFF',
-    logo: 'Node.js'
-}} alt="Node.js"/>-->
+<ContainerShields align="center"/>
 
-<!--<Shield urlShield="https://img.shields.io/github/v/tag/rudemex/nestjs-starter?label=release" alt="Release"/>-->
-
-<div align="center">
-    <img
-        src="https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.15.4&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js"
-        alt="Node.js"/> <img
-    src="https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.10&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm"
-    alt="Npm"/> <img
-    src="https://img.shields.io/static/v1.svg?style=flat&label=NestJs&message=v8.2.6&labelColor=E0234E&logoColor=FFFFFF&color=757575&logo=Nestjs"
-    alt="NestJs"/> <a href="https://github.com/rudemex/nestjs-starter/releases/latest">
-    <img alt="Last Release" src="https://img.shields.io/github/v/tag/rudemex/nestjs-starter?label=release"/>
-</a> <a href="https://github.com/rudemex/nestjs-starter/blob/master/license.md">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/rudemex/nestjs-starter?style=flat"/>
-</a>
-    <br/>
-    <a href="https://github.com/rudemex/nestjs-starter/actions/workflows/master.yml" target="_blank"><img
-        alt="GitHub Workflow Status"
-        src="https://github.com/rudemex/nestjs-starter/actions/workflows/master.yml/badge.svg?branch=master"/>
-    </a> <a href="https://app.codecov.io/gh/rudemex/nestjs-starter/" target="_blank">
-    <img alt="Codecov"
-         src="https://img.shields.io/codecov/c/github/rudemex/nestjs-starter?logoColor=FFFFFF&logo=Codecov&labelColor=#F01F7A"/>
-</a> <a href="https://sonarcloud.io/summary/new_code?id=rudemex_nestjs-starter" target="_blank">
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=rudemex_nestjs-starter&metric=alert_status"
-         alt="sonarcloud"/>
-</a> <a href="https://snyk.io/test/github/rudemex/nestjs-starter" target="_blank">
-    <img src="https://snyk.io/test/github/rudemex/nestjs-starter/badge.svg" alt="Snyk"/></a>
-    <br/>
-</div>
 <br/>
 <p>NestJS es un framework progresivo de Node.js para la creación de aplicaciones eficientes, confiables y escalables del
     lado del servidor, el cual está construido y es completamente compatible con TypeScript y JavaScript, combinando
@@ -75,8 +71,6 @@ import Header from "../src/components/Header";
 - [📜 License MIT](https://github.com/rudemex/nestjs-starter/blob/master/license.md)
 
 ---
-
-<a name="objective"></a>
 
 ## 🤓 Objetivo
 
@@ -102,15 +96,11 @@ Reduce envío de datos. Las API's del BFF se diseñó tomando como base los requ
 Reduce exposición de datos sensibles. El BFF contiene API's que filtran estos datos y solo se exponen los datos necesarios. Gestión de tokens. El BFF es quien se encarga del almacenamiento y gestiona la renovación del access-token.
 
 
-<a name="basic-requirements"></a>
-
 ## 📝 Requerimientos básicos
 
 - Node.js v14.15.4 or higher ([Download](https://nodejs.org/es/download/))
 - NPM v6.14.10 or higher
 - NestJS v8.2.0 or higher ([Documentación](https://nestjs.com/))
-
-<a name="install-dependencies"></a>
 
 ## 🛠️ Instalar dependencias
 
@@ -133,9 +123,6 @@ npm install
 
 </TabItem>
 </Tabs>
-
-
-<a name="configurations"></a>
 
 ## ⚙️ Configuración
 
@@ -255,8 +242,6 @@ dicha variable, y muchas validaciones más.
 Todos estos features los podemos encontrar en la carpeta **./src/config**, en dicha carpeta podemos encontrar el archivo
 **environments.ts** que es un manejador de env files dependiendo el **NODE_ENV** que tenga nuestra aplicación.
 
-<a name="scripts"></a>
-
 ## 💻 Scripts
 
 Inicia la aplicación en modo desarrollo
@@ -375,8 +360,6 @@ npm run lint
 </TabItem>
 </Tabs>
 
-<a name="swagger-info"></a>
-
 ## 📚 Swagger
 
 El proyecto cuenta con un **Swagger** (OpenAPI 3.0.0) que tiene documentado los endpoints con sus
@@ -411,8 +394,6 @@ definido. [Demo Swagger JSON](https://rudemex-nestjs-starter.herokuapp.com/docs-
 - Default: `http://localhost:8080/docs-json`
 - Schema: `<http|https>://<server_url><:port>/<swagger-path>-json`
 
-<a name="docker"></a>
-
 ## 🐳 Docker
 
 El proyecto cuenta con un `dockerfile` y un `docker-compose.yml` de base, listo para utilizar y expandir sus capacidades.
@@ -430,8 +411,6 @@ docker build -t nestjs-starter .
 ```
 docker run -d -p 8080:8080 --env-file .env.prod nestjs-starter
 ```
-
-<a name="commits"></a>
 
 ## 📤 Commits
 
@@ -453,8 +432,6 @@ referencia [`conventional commits`](https://www.conventionalcommits.org/en/v1.0.
 ```
 git commit -m "docs(readme): add documentantion to readme"
 ```
-
-<a name="versioning"></a>
 
 ## 🏷️ Versionado
 
@@ -498,7 +475,7 @@ All notable changes to this project will be documented in [Changelog](https://gi
 
 <div align="center">
     <a href="mailto:mdelgado@tresdoce.com.ar" target="_blank" alt="Send an email">
-        <img src="./img/logo-mex-red.svg" width="120" alt="Mex"/>
+        <img src="/img/logo-mex-red.svg" width="120" alt="Mex"/>
     </a><br/>
     <p>Made with ❤</p>
 </div>

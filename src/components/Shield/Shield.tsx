@@ -1,19 +1,16 @@
 import React, { createElement } from 'react';
 import clsx from 'clsx';
 import filterProps from '@site/src/utils/filter-props';
-//import useFrontMatter from '@theme/useFrontMatter';
 
 import { ShieldProps } from '@site/src/components/Shield/types';
 
 const Shield: React.FC<ShieldProps> = ({
   className,
+  alt,
   urlShield = null,
   shieldArgs = {},
   ...rest
 }) => {
-  //const { shields } = useFrontMatter();
-  //console.log(shields)
-
   const filteredProps = filterProps(rest);
   const classes = clsx({
     'default-class': false,
@@ -30,6 +27,7 @@ const Shield: React.FC<ShieldProps> = ({
     'img',
     {
       className: classes,
+      alt,
       src,
       ...filteredProps,
     },

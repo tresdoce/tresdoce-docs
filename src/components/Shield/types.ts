@@ -1,4 +1,5 @@
 export type ShieldProps = {
+  alt: string;
   className?: string;
   urlShield?: string;
   shieldArgs?: ShieldArgs;
