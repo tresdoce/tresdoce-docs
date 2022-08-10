@@ -37,10 +37,10 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-rc.1",
-    "@docusaurus/plugin-content-docs": "^2.0.0-rc.1",
-    "@docusaurus/preset-classic": "2.0.0-rc.1",
-    "@easyops-cn/docusaurus-search-local": "^0.29.3",
+    "@docusaurus/core": "2.0.1",
+    "@docusaurus/plugin-content-docs": "^2.0.1",
+    "@docusaurus/preset-classic": "2.0.1",
+    "@easyops-cn/docusaurus-search-local": "^0.31.0",
     "@mdx-js/react": "^1.6.22",
     "@svgr/webpack": "^6.3.0",
     "clsx": "^1.2.1",
@@ -60,7 +60,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@docusaurus/module-type-aliases": "2.0.0-rc.1",
+    "@docusaurus/module-type-aliases": "2.0.1",
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/node": "^18.0.6",
     "@types/react": "^18.0.15",

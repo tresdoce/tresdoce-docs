@@ -34,20 +34,20 @@ const config = {
         },
         items: [
           /*{
-                                type: 'doc',
-                                docId: 'intro',
-                                position: 'left',
-                                label: 'Tutorial',
-                              },*/
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Tutorial',
+          },*/
           /*{ to: '/blog', label: 'Blog', position: 'left' },*/
           /*{
-                                type: 'localeDropdown',
-                                position: 'right',
-                              },*/
+            type: 'localeDropdown',
+            position: 'right',
+          },*/
           /*{
-                                type: 'docsVersionDropdown',
-                                position: 'right',
-                              },*/
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },*/
           {
             href: 'https://github.com/tresdoce/tresdoce-docs',
             label: 'GitHub',
@@ -62,8 +62,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Starter',
                 to: '/',
+              },
+              {
+                label: 'Toolkit',
+                to: '/toolkit',
               },
             ],
           },
@@ -88,9 +92,9 @@ const config = {
             title: 'More',
             items: [
               /*{
-                                            label: 'Blog',
-                                            to: '/blog',
-                                          },*/
+                label: 'Blog',
+                to: '/blog',
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/tresdoce/tresdoce-docs',
@@ -121,11 +125,11 @@ const config = {
           //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         /*blog: {
-                          showReadingTime: true,
-                          // Please change this to your repo.
-                          // Remove this to remove the "edit this page" links.
-                          //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
-                        },*/
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          //editUrl: 'https://github.com/tresdoce/tresdoce-docs/tree/main/packages/create-docusaurus/templates/shared/',
+        },*/
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
